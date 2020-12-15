@@ -33,7 +33,6 @@
 .bg-pattern-bottom {
     background: center center /cover url("images/bg-pattern-bottom.svg");
     position: absolute;
-    
     width: 978px;
     height: 978px;
     right: -650px;
