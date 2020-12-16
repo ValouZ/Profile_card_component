@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+root{
+    font-size: 18px;
+}
+
 .container {
     position: relative;
     font-family: 'Kumbh sans';
@@ -25,7 +29,7 @@
     background: center center /cover url("images/bg-pattern-top.svg");
     width: 978px;
     height: 978px;
-    top: -700px;
+    top: -500px;
     left: -725px;
     z-index: 1;
 }
@@ -35,8 +39,8 @@
     position: absolute;
     width: 978px;
     height: 978px;
-    right: -650px;
-    top: 550px;
+    right: -750px;
+    top: 350px;
     z-index: 1;
 }
 
@@ -91,7 +95,7 @@
 
 .info .city {
     margin-top: 16px;
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
 
 .stats {
@@ -119,18 +123,37 @@
     margin-top: 11px;
     letter-spacing: 1px;
     color: #6A6F81;
-    font-size: 0.7rem;
+    font-size: 0.7em;
     font-weight: 300;
 }
 
 .attribution {
+    color: #2D3248;
     position: absolute;
     bottom: 10px;
-    font-size: 11px;
+    font-size: 0.7em;
     text-align: center;
     z-index: 1;
 }
 
 .attribution a {
     color: #3e52a3;
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        font-size: 22px;
+    }
+    .bg-pattern-top {
+        top: -400px;
+        left: -20%;
+    }
+    .bg-pattern-bottom {
+        right: -10%;
+        top: 550px;
+    }
+    .card {
+        height: 375px;
+        width: 350px;
+    }
 }
