@@ -4,8 +4,13 @@
     padding: 0;
 }
 
-root{
+root {
     font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    background-color: #19A2AE;
 }
 
 .container {
@@ -13,15 +18,13 @@ root{
     font-family: 'Kumbh sans';
     font-size: 18px;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: row;
+    height: 100%;
     width: 100vw;
-    max-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: #19A2AE;
-    z-index: 0;
-    overflow: hidden;
+    z-index: 1;
+    flex-wrap: wrap;
 }
 
 .bg-pattern-top {
@@ -31,7 +34,7 @@ root{
     height: 978px;
     top: -500px;
     left: -725px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bg-pattern-bottom {
@@ -41,10 +44,11 @@ root{
     height: 978px;
     right: -750px;
     top: 350px;
-    z-index: 1;
+    z-index: 0;
 }
 
-.card {
+.card,
+.first-card {
     z-index: 2;
     position: relative;
     display: flex;
@@ -56,6 +60,11 @@ root{
     min-width: 326px;
     border-radius: 13px;
     overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card {
+    margin-left: 10px;
 }
 
 .profil-image {
@@ -65,9 +74,9 @@ root{
     z-index: 5;
     width: 105px;
     height: 105px;
-    background: center center url("images/image-valentin.jpg");
     border: 5px solid white;
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .info {
@@ -152,7 +161,8 @@ root{
         right: -10%;
         top: 550px;
     }
-    .card {
+    .card,
+    .first-card {
         height: 375px;
         width: 350px;
     }
