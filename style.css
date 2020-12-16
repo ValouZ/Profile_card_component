@@ -9,7 +9,8 @@ root {
     font-size: 18px;
 }
 
-body {
+.container {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -19,13 +20,11 @@ body {
     background-color: #19A2AE;
 }
 
-.container {
+.cards {
     position: relative;
     font-size: 18px;
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100vw;
     align-items: center;
     justify-content: center;
     z-index: 2;
@@ -155,7 +154,7 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
-    .container {
+    .cards {
         font-size: 22px;
     }
     .bg-pattern-top {
@@ -168,7 +167,9 @@ body {
     }
     .card,
     .first-card {
-        height: 375px;
         width: 350px;
+    }
+    .stats {
+        margin-top: 19px;
     }
 }
