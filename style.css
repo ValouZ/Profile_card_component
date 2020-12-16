@@ -16,11 +16,11 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: #19A2AE;
 }
 
 .container {
     position: relative;
-    background-color: #19A2AE;
     font-size: 18px;
     display: flex;
     flex-direction: row;
@@ -28,7 +28,7 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
     flex-wrap: wrap;
 }
 
@@ -39,7 +39,7 @@ body {
     height: 978px;
     top: -500px;
     left: -725px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .bg-pattern-bottom {
@@ -49,7 +49,7 @@ body {
     height: 978px;
     right: -750px;
     top: 350px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .card,
