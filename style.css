@@ -10,11 +10,12 @@ root {
 
 body {
     height: 100vh;
-    background-color: #19A2AE;
+    overflow: hidden;
 }
 
 .container {
     position: relative;
+    background-color: #19A2AE;
     font-family: 'Kumbh sans';
     font-size: 18px;
     display: flex;
@@ -34,7 +35,7 @@ body {
     height: 978px;
     top: -500px;
     left: -725px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .bg-pattern-bottom {
@@ -44,12 +45,12 @@ body {
     height: 978px;
     right: -750px;
     top: 350px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .card,
 .first-card {
-    z-index: 2;
+    z-index: 3;
     position: relative;
     display: flex;
     flex-direction: column;
