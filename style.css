@@ -13,7 +13,7 @@ root {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
@@ -32,7 +32,7 @@ root {
 }
 
 .bg-pattern-top {
-    position: absolute;
+    position: fixed;
     background: center center /cover url("images/bg-pattern-top.svg");
     width: 978px;
     height: 978px;
@@ -43,7 +43,7 @@ root {
 
 .bg-pattern-bottom {
     background: center center /cover url("images/bg-pattern-bottom.svg");
-    position: absolute;
+    position: fixed;
     width: 978px;
     height: 978px;
     right: -750px;
@@ -64,6 +64,7 @@ root {
     min-width: 326px;
     border-radius: 13px;
     overflow: hidden;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
